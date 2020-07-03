@@ -1,0 +1,20 @@
+# Python program to remove file and directory
+
+        
+
+import os   
+
+file = 'D:/Pycharm projects/GeeksforGeeks/Authors/Nikhil'
+
+
+try:  
+
+    os.remove(path)  
+
+    print("% s removed successfully" % path)  
+
+except OSError as error:  
+
+    print(error)  
+
+    print("File  can not be removed")
