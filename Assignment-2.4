@@ -1,0 +1,12 @@
+# using "with statement" with open() function
+with open('sample.txt', "r") 
+ file_object:
+    # read file content
+    data = file_object.read()
+    # print file contents
+    print(data)
+# Check if file is closed
+if file_object.closed == False:
+    print('File is not closed')
+else:
+    print('File is closed')
